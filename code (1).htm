@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!-- ===== META: 基本設定 ===== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== SEO: meta基本設定 ===== -->
+    <title>中華屋 架空 | 厳選素材と極上の牛肉が織りなす至高の創作中華</title>
+    <meta name="description" content="年に5回、特別な瞬間に味わいたい「中華屋 架空」。厳選された自家栽培野菜と、とろけるような牛肉を使用した、ここでしか出会えない唯一無二の創作中華料理をご堪能ください。">
+    <meta name="keywords" content="中華屋, 架空, 創作中華, 高級中華, 牛肉料理, 記念日ディナー, 隠れ家レストラン">
+    <meta name="author" content="中華屋 架空">
+    <link rel="canonical" href="https://kaku-chuka.example.com/">
+
+    <!-- ===== SEO: OGP (SNS共有用) ===== -->
+    <meta property="og:title" content="中華屋 架空 | 厳選素材と極上の牛肉が織りなす至高の創作中華">
+    <meta property="og:description" content="年に5回、特別な瞬間に味わいたい「中華屋 架空」。自家栽培野菜と黒毛和牛の至高のマリアージュをお届けします。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kaku-chuka.example.com/">
+    <meta property="og:image" content="https://kaku-chuka.example.com/ogp-image.jpg">
+    <meta property="og:site_name" content="中華屋 架空">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- ===== SEO: 構造化データ (JSON-LD) ===== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "中華屋 架空",
+      "image": "https://kaku-chuka.example.com/logo.png",
+      "description": "厳選された自家栽培野菜と黒毛和牛を使用した、季節を感じる特別な創作中華料理店。",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "中華町1-2-3",
+        "addressLocality": "架空市",
+        "addressRegion": "架空県",
+        "postalCode": "000-0000",
+        "addressCountry": "JP"
+      }
+    }
+    </script>
+
+    <!-- ===== STYLE: CSS変数定義 ===== -->
+    <style>
+        :root {
+            --bg-body: #1a1410;
+            --bg-section-alt: #251c14;
+            --bg-footer: #0f0c08;
+            --color-gold: #d4af37;
+            --color-gold-light: #f5e6c8;
+            --color-text: #e0d0b0;
+            --font-main: 'Georgia', 'Yu Mincho', 'Hiragino Mincho ProN', serif;
+        }
+
+        /* ===== STYLE: リセット・共通 ===== */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: var(--bg-body); color: var(--color-text); font-family: var(--font-main); line-height: 2; letter-spacing: 0.1em; }
+        .container { max-width: 1140px; margin: 0 auto; padding: 0 40px; text-align: center; }
+        h1, h2, h3 { color: var(--color-gold); margin-bottom: 2rem; font-weight: normal; }
+        h1 { font-size: 3rem; letter-spacing: 0.2em; }
+        h2 { font-size: 2.2rem; }
+        p { margin-bottom: 1.5rem; }
+        a { text-decoration: none; color: var(--color-gold-light); transition: 0.4s; }
+        a:hover { color: var(--color-gold); }
+        .btn { display: inline-block; padding: 15px 40px; border: 1px solid var(--color-gold); color: var(--color-gold); transition: 0.4s; margin-top: 20px; }
+        .btn:hover { background: var(--color-gold); color: var(--bg-body); }
+        .section-padding { padding: 120px 20px; }
+        .bg-alt { background-color: var(--bg-section-alt); }
+
+        /* ===== STYLE: ナビゲーション ===== */
+        header { padding: 30px 0; border-bottom: 1px solid #332a22; position: sticky; top: 0; background: var(--bg-body); z-index: 1000; }
+        .nav-inner { display: flex; justify-content: space-between; align-items: center; max-width: 1140px; margin: 0 auto; padding: 0 40px; }
+        .nav-links { display: flex; gap: 40px; }
+        .menu-toggle { display: none; background: none; border: 1px solid var(--color-gold); color: var(--color-gold); padding: 5px 15px; }
+
+        /* ===== STYLE: ヒーローセクション ===== */
+        .hero { background: linear-gradient(135deg, #1a1410, #3a2a1a); padding: 180px 20px; border-bottom: 1px solid var(--color-gold); }
+        .hero p { max-width: 700px; margin: 0 auto 40px; font-size: 1.2rem; }
+
+        /* ===== STYLE: カード・グリッド ===== */
+        .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 60px; margin-top: 60px; }
+        .card { padding: 40px; border: 1px solid #4a3d32; }
+        .card h3 { font-size: 1.5rem; }
+
+        /* ===== STYLE: フォーム ===== */
+        .contact-form { max-width: 600px; margin: 0 auto; }
+        .form-group { margin-bottom: 30px; }
+        input, textarea { width: 100%; padding: 15px; background: transparent; border: 1px solid #4a3d32; color: var(--color-text); font-family: var(--font-main); }
+
+        /* ===== STYLE: フッター ===== */
+        footer { background: var(--bg-footer); padding: 60px 20px; border-top: 1px solid #332a22; font-size: 0.9rem; }
+
+        /* ===== STYLE: レスポンシブ (タブレット) ===== */
+        @media (max-width: 1023px) {
+            .grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        /* ===== STYLE: レスポンシブ (スマホ) ===== */
+        @media (max-width: 767px) {
+            .container { padding: 0 20px; }
+            .grid { grid-template-columns: 1fr; }
+            .nav-links { display: none; position: absolute; top: 100%; left: 0; width: 100%; background: var(--bg-body); flex-direction: column; padding: 40px; border-bottom: 1px solid var(--color-gold); }
+            .nav-links.active { display: flex; }
+            .menu-toggle { display: block; }
+            h1 { font-size: 1.8rem; }
+            h2 { font-size: 1.6rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== SECTION: ナビゲーションバー ===== -->
+    <header>
+        <div class="nav-inner">
+            <div style="font-size: 1.8rem; color: var(--color-gold); letter-spacing: 0.2em;">架空</div>
+            <nav>
+                <div class="nav-links" id="navLinks">
+                    <a href="#about">CONCEPT</a>
+                    <a href="#features">FEATURES</a>
+                    <a href="#menu">MENU</a>
+                    <a href="#contact">RESERVE</a>
+                </div>
+                <button class="menu-toggle" id="menuToggle">MENU</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- ===== SECTION: ヒーロー ===== -->
+        <section class="hero">
+            <div class="container">
+                <h1>年に五度、出会う奇跡</h1>
+                <p>自社農園で育まれた瑞々しい野菜と、厳選された黒毛和牛が織りなす至高の旋律。日常を忘れ、架空の物語のようなひとときを貴方へ。</p>
+                <a href="#contact" class="btn">ご予約・お問い合わせ</a>
+            </div>
+        </section>
+
+        <!-- ===== SECTION: About / 概要 ===== -->
+        <section class="section-padding" id="about">
+            <div class="container">
+                <h2>「架空」という名の理由</h2>
+                <p>一般的な中華料理の枠組みを超え、まるで物語の中にいるような体験を。<br>私たちが提供するのは、単なる食事ではありません。<br>季節の移ろいを感じるたびに思い出していただける、記憶に刻まれる「味の風景」です。</p>
+            </div>
+        </section>
+
+        <!-- ===== SECTION: 特徴・強み ===== -->
+        <section class="section-padding bg-alt" id="features">
+            <div class="container">
+                <h2>三つの約束</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>自家栽培野菜</h3>
+                        <p>朝摘みの野菜にこだわり、素材本来の甘みと食感を最大限に引き出します。無農薬の力強さを皿の上に。</p>
+                    </div>
+                    <div class="card">
+                        <h3>厳選黒毛和牛</h3>
+                        <p>年に数回しか仕入れない最高級の黒毛和牛。口の中でとろける脂の甘みと、赤身の濃い旨味を堪能ください。</p>
+                    </div>
+                    <div class="card">
+                        <h3>革新的な調和</h3>
+                        <p>伝統的な中華技法をベースに、スパイスや果実を組み合わせた「面白い味」を追求。驚きのひと皿をお届けします。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SECTION: サービス・コンテンツ詳細 ===== -->
+        <section class="section-padding" id="menu">
+            <div class="container">
+                <h2>季節のコースメニュー</h2>
+                <p>四季折々の食材と牛肉の共演を楽しむ、五つの特別なコースをご用意しております。<br>春の芽吹き、夏の深緑、秋の収穫、冬の静寂。その時々に最適な温度で提供される至高のコースです。</p>
+            </div>
+        </section>
+
+        <!-- ===== SECTION: お問い合わせフォーム ===== -->
+        <section class="section-padding bg-alt" id="contact">
+            <div class="container">
+                <h2>ご予約・お問い合わせ</h2>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group"><input type="text" placeholder="お名前" required></div>
+                    <div class="form-group"><input type="email" placeholder="メールアドレス" required></div>
+                    <div class="form-group"><textarea rows="5" placeholder="ご要望・人数・日時など"></textarea></div>
+                    <button type="submit" class="btn" style="width: 100%;">送信する</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== SECTION: フッター ===== -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 中華屋 架空 All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // ===== JS: ハンバーガーメニュー =====
+        document.getElementById('menuToggle').addEventListener('click', () => {
+            document.getElementById('navLinks').classList.toggle('active');
+        });
+
+        // ===== JS: スムーススクロール =====
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+                document.getElementById('navLinks').classList.remove('active');
+            });
+        });
+
+        // ===== JS: フォーム送信処理 =====
+        document.getElementById('contactForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('お問い合わせを受け付けました。折り返しご連絡いたします。');
+        });
+    </script>
+</body>
+</html>
