@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!-- ===== META: 基本設定 ===== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== SEO: meta基本設定 ===== -->
+    <title>中華料理 燦然（さんぜん） - 黄金に輝く至高の美食体験</title>
+    <meta name="description" content="年に五度、出会う奇跡の美食体験。自家栽培の瑞々しい野菜と厳選された黒毛和牛が織りなす、中華料理の枠を超えた至高の旋律。日常を忘れ、物語の中にいるようなひとときを貴方へ。">
+    <meta name="keywords" content="高級中華,黒毛和牛,自家栽培野菜,予約制レストラン,美食体験,ディナー,記念日">
+    <meta name="author" content="中華料理 燦然">
+    <link rel="canonical" href="https://sanzen-kaku.example.com/">
+
+    <!-- ===== SEO: OGP (SNS共有用) ===== -->
+    <meta property="og:title" content="中華料理 燦然 - 黄金に輝く至高の美食体験">
+    <meta property="og:description" content="自社農園の野菜と黒毛和牛が織りなす、記憶に刻まれる味の風景。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sanzen-kaku.example.com/">
+    <meta property="og:image" content="https://muraimuneaki.net/urayama/images/rec/71.jpg">
+    <meta property="og:site_name" content="中華料理 燦然">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- ===== SEO: 構造化データ (JSON-LD) ===== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "中華料理 燦然",
+      "image": "https://muraimuneaki.net/urayama/images/rec/71.jpg",
+      "description": "自社農園野菜と黒毛和牛の革新的中華料理店",
+      "address": { "@type": "PostalAddress", "streetAddress": "黄金町1-2-3", "addressLocality": "中央区", "addressRegion": "東京都", "addressCountry": "JP" }
+    }
+    </script>
+
+    <!-- ===== STYLE: CSS変数定義 ===== -->
+    <style>
+        :root {
+            --bg-body: #1a1410;
+            --bg-section-alt: #251c14;
+            --bg-footer: #0f0c08;
+            --color-gold: #d4af37;
+            --color-gold-light: #c9a85c;
+            --color-text: #f5e6c8;
+            --font-main: 'Yu Mincho', 'Hiragino Mincho ProN', 'Georgia', serif;
+        }
+
+        /* ===== STYLE: リセット・共通 ===== */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { background-color: var(--bg-body); color: var(--color-text); font-family: var(--font-main); line-height: 1.8; letter-spacing: 0.15em; }
+        .container { max-width: 1140px; margin: 0 auto; padding: 0 20px; }
+        section { padding: 120px 20px; }
+        .section-alt { background-color: var(--bg-section-alt); }
+        h1, h2, h3 { color: var(--color-gold); font-weight: normal; margin-bottom: 20px; text-transform: uppercase; }
+        h1 { font-size: 3.5rem; line-height: 1.2; }
+        h2 { font-size: 2.5rem; text-align: center; margin-bottom: 60px; position: relative; }
+        h2::after { content: '◈'; display: block; color: var(--color-gold); margin-top: 20px; font-size: 1.5rem; }
+        a { text-decoration: none; color: inherit; transition: 0.4s; }
+        .btn { display: inline-block; padding: 18px 50px; border: 1px solid var(--color-gold); color: var(--color-gold); transition: 0.4s; text-transform: uppercase; letter-spacing: 0.2em; cursor: pointer; background: transparent; }
+        .btn:hover { background: var(--color-gold); color: var(--bg-body); }
+        .img-fluid { max-width: 100%; height: auto; border: 1px solid var(--color-gold); }
+
+        /* ===== STYLE: ナビゲーション ===== */
+        header { padding: 30px 0; border-bottom: 1px solid rgba(212, 175, 55, 0.2); position: sticky; top: 0; z-index: 100; background: rgba(26, 20, 16, 0.95); backdrop-filter: blur(10px); }
+        nav { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.8rem; letter-spacing: 0.3em; color: var(--color-gold); font-weight: bold; }
+        .nav-links { display: flex; gap: 40px; }
+        .hamburger { display: none; cursor: pointer; font-size: 28px; color: var(--color-gold); }
+
+        /* ===== STYLE: ヒーローセクション ===== */
+        .hero { height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; background: linear-gradient(135deg, #1a1410, #3a2a1a); border-bottom: 1px solid var(--color-gold); position: relative; }
+        .hero-content { max-width: 800px; z-index: 1; }
+        .hero p { font-size: 1.2rem; margin-bottom: 40px; opacity: 0.9; }
+
+        /* ===== STYLE: カード・グリッド ===== */
+        .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+        .card { padding: 50px; border: 1px solid rgba(212, 175, 55, 0.2); background: rgba(37, 28, 20, 0.3); text-align: center; transition: 0.4s; }
+        .card:hover { border-color: var(--color-gold); transform: translateY(-10px); background: rgba(212, 175, 55, 0.05); }
+
+        /* ===== STYLE: フォーム ===== */
+        .form-group { margin-bottom: 25px; }
+        input, textarea { width: 100%; padding: 20px; background: rgba(26, 20, 16, 0.5); border: 1px solid rgba(212, 175, 55, 0.3); color: var(--color-text); font-family: inherit; }
+        input:focus, textarea:focus { outline: none; border-color: var(--color-gold); }
+
+        /* ===== STYLE: フッター ===== */
+        footer { background: var(--bg-footer); padding: 80px 20px; text-align: center; border-top: 1px solid var(--color-gold); }
+
+        /* ===== STYLE: レスポンシブ (タブレット) ===== */
+        @media (max-width: 1023px) {
+            .grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        /* ===== STYLE: レスポンシブ (スマホ) ===== */
+        @media (max-width: 767px) {
+            h1 { font-size: 1.8rem; }
+            h2 { font-size: 1.5rem; }
+            .nav-links { display: none; position: absolute; top: 100%; left: 0; width: 100%; background: var(--bg-body); flex-direction: column; padding: 40px 20px; text-align: center; border-bottom: 1px solid var(--color-gold); }
+            .hamburger { display: block; }
+            .grid { grid-template-columns: 1fr; }
+            .nav-links.active { display: flex; }
+            .hero { height: 70vh; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== SECTION: ナビゲーションバー ===== -->
+    <header>
+        <div class="container nav">
+            <div class="logo">燦 然</div>
+            <div class="hamburger" id="hamburger">☰</div>
+            <nav class="nav-links" id="nav-links">
+                <a href="#about">CONCEPT</a>
+                <a href="#features">FEATURES</a>
+                <a href="#menu">MENU</a>
+                <a href="#contact">RESERVE</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- ===== SECTION: ヒーロー ===== -->
+        <section class="hero">
+            <div class="container hero-content">
+                <h1>年に五度、出会う奇跡</h1>
+                <p>自社農園の瑞々しい野菜と厳選された黒毛和牛が織りなす、中華料理の枠を超えた至高の旋律。</p>
+                <a href="#contact" class="btn">ご予約・お問い合わせ</a>
+            </div>
+        </section>
+
+        <!-- ===== SECTION: About / 概要 ===== -->
+        <section id="about">
+            <div class="container" style="max-width: 900px; display: flex; flex-wrap: wrap; align-items: center; gap: 40px;">
+                <div style="flex: 1; min-width: 300px;">
+                    <img src="https://muraimuneaki.net/urayama/images/rec/71.jpg" alt="燦然の至高の一皿" class="img-fluid">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                    <h2>「燦然」という名の理由</h2>
+                    <p>一般的な中華料理の枠組みを超え、まるで物語の中にいるような体験を。私たちが提供するのは、単なる食事ではありません。季節の移ろいを感じるたびに思い出していただける、記憶に刻まれる「味の風景」です。伝統を重んじつつも、既存の概念を解体し、再構築する。その過程で生まれる一皿一皿が、貴方の人生の物語を彩ります。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SECTION: 特徴・強み ===== -->
+        <section id="features" class="section-alt">
+            <div class="container">
+                <h2>三つの約束</h2>
+                <div class="grid">
+                    <article class="card">
+                        <h3>自家栽培野菜</h3>
+                        <p>朝摘みの野菜にこだわり、素材本来の甘みと食感を最大限に引き出します。農薬を使わず、土の栄養をダイレクトに吸収した野菜の力強さを表現します。</p>
+                    </article>
+                    <article class="card">
+                        <h3>厳選黒毛和牛</h3>
+                        <p>年に数回しか仕入れない、最高級のA5ランク黒毛和牛。口の中でとろける脂の甘みと、赤身の濃い旨味を、秘伝のスパイスと合わせてご堪能ください。</p>
+                    </article>
+                    <article class="card">
+                        <h3>革新的な調和</h3>
+                        <p>伝統的な中華技法をベースに、世界中のスパイスや果実を組み合わせた「未知の味」を追求。一口食べた瞬間に驚きが広がる、五感に訴えかけるコースです。</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SECTION: サービス・コンテンツ詳細 ===== -->
+        <section id="menu">
+            <div class="container">
+                <h2>季節のコースメニュー</h2>
+                <div class="grid">
+                    <div class="card"><h3>春の息吹</h3><p>山菜と若牛の饗宴</p></div>
+                    <div class="card"><h3>夏の情熱</h3><p>香辛料と赤身の刺激</p></div>
+                    <div class="card"><h3>秋の収穫</h3><p>根菜と熟成肉の旨味</p></div>
+                    <div class="card"><h3>冬の静寂</h3><p>根雪をイメージした白湯</p></div>
+                    <div class="card"><h3>架空の宴</h3><p>シェフ渾身の物語</p></div>
+                    <div class="card"><h3>特別招待</h3><p>完全予約制の特別席</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SECTION: お問い合わせフォーム ===== -->
+        <section id="contact" class="section-alt">
+            <div class="container" style="max-width: 600px;">
+                <h2>ご予約・お問い合わせ</h2>
+                <form id="contact-form">
+                    <div class="form-group"><input type="text" placeholder="お名前" required></div>
+                    <div class="form-group"><input type="email" placeholder="メールアドレス" required></div>
+                    <div class="form-group"><textarea rows="5" placeholder="ご要望・人数・日時など"></textarea></div>
+                    <button type="submit" class="btn" style="width: 100%;">送信する</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== SECTION: フッター ===== -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 燦然 - SANZEN Chinese Cuisine. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // ===== JS: ハンバーガーメニュー =====
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // ===== JS: スムーススクロール =====
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                window.scrollTo({ top: target.offsetTop - 80, behavior: 'smooth' });
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // ===== JS: フォーム送信処理 =====
+        document.getElementById('contact-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('ご予約ありがとうございます。担当者より折り返しご連絡いたします。');
+        });
+    </script>
+</body>
+</html>
